@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1O-TV-TsU">
+                                <rect key="frame" x="100" y="70" width="175" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxP-Or-lbg">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bxP-Or-lbg" firstAttribute="leading" secondItem="I1O-TV-TsU" secondAttribute="leading" id="7i6-QV-F0U"/>
+                                    <constraint firstAttribute="trailing" secondItem="bxP-Or-lbg" secondAttribute="trailing" id="DjR-ue-HFk"/>
+                                    <constraint firstAttribute="bottom" secondItem="bxP-Or-lbg" secondAttribute="bottom" id="bsx-bg-N6H"/>
+                                    <constraint firstAttribute="height" constant="50" id="epm-de-G57"/>
+                                    <constraint firstItem="bxP-Or-lbg" firstAttribute="top" secondItem="I1O-TV-TsU" secondAttribute="top" id="oTI-2l-cYa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpS-4F-gMC">
+                                <rect key="frame" x="100" y="120" width="175" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rtu-4d-fVQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UpS-4F-gMC" firstAttribute="top" secondItem="I1O-TV-TsU" secondAttribute="bottom" id="37m-KE-FVK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I1O-TV-TsU" secondAttribute="trailing" constant="100" id="3Ks-03-Cay"/>
+                            <constraint firstItem="I1O-TV-TsU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MGk-hu-gFr"/>
+                            <constraint firstItem="UpS-4F-gMC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Mgz-aR-p21"/>
+                            <constraint firstItem="I1O-TV-TsU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="c4y-vs-lKJ"/>
+                            <constraint firstItem="I1O-TV-TsU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="lYq-NP-wCm"/>
+                            <constraint firstItem="UpS-4F-gMC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="otK-SY-e1q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UpS-4F-gMC" secondAttribute="trailing" constant="100" id="rKd-GH-UhV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="bxP-Or-lbg" id="hpq-3g-PlH"/>
+                        <outlet property="view1" destination="I1O-TV-TsU" id="rcj-cI-JjT"/>
+                        <outlet property="view2" destination="UpS-4F-gMC" id="7bP-KF-XeB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
